@@ -32,13 +32,13 @@ Do the following:
    HINT: no function required
 */
 
-let name = "Aissata"
-let lastName = "Bah"
+let name = "Aissata";
+let lastName = "Bah";
 
-if (name==="Aissata") {
+if(name==="Aissata") {
   name=lastName;
 }
-console.log(name);
+// console.log(name);
 
 
 /*
@@ -174,7 +174,7 @@ else if (computer > 0.67) {
 function game(user, computer){
     // if user > computer 
 if (user === computer) {
-  return `it’s a tie`;
+  return `it's a tie`;
   } 
 else if (user === `rock` && computer === `scissors`){
   return `you win!`;
@@ -251,22 +251,36 @@ Using the grade function below do the following:
 */
   
 function grade(score){
-  if (score <=90 && score >=100) {
-    return "You got an A";
+  if(score >= 90 && score <= 100){
+    return "you got an A";
+  }else if(score >= 80){
+    return "you got a B";
+  }else if(score >= 70){
+    return "you got a C";
+  }else if(score >= 60){
+    return "you got a D"
+  }else if(score < 60){
+    return "you got an F"
   }
-  else if (score <=80 && score >=89) {
-    return "You got a B";
-  }
-  else if (score <=70 && score >=79) {
-    return "You got a C";
-   }
-  else if (score <=60 && score >=69) {
-    return "You got a D"
-  }
-  else {
-    return "You got an F"
-  }
-  }
+}
+
+// function grade(score){
+//   if (score <=90 && score >=100) {
+//     return "You got an A";
+//   }
+//   else if (score <=80 && score >=89) {
+//     return "You got a B";
+//   }
+//   else if (score <=70 && score >=79) {
+//     return "You got a C";
+//    }
+//   else if (score <=60 && score >=69) {
+//     return "You got a D"
+//   }
+//   else {
+//     return "You got an F"
+//   }
+//   }
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
