@@ -69,7 +69,7 @@ function multiply(a,b){
   return a * b;
     /*add your code here*/
   }
-  console.log (multiply(2,5));
+  // console.log (multiply(2,5));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -192,8 +192,6 @@ Using the feet function below do the following:
 function feet(cm){
     return cm/30.48;
   }
- 
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -206,27 +204,10 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(startNum){
-  var bottles;
-  for (counter = 99; counter >= 1; counter = counter - 1) 
-  {
-      if (counter == 1) {
-          bottles = 'bottle';
-      } else {
-          bottles = 'bottles';
-      }
-      console.log(counter+" "+bottles+" of beer on the wall.");
-      if (counter < 99) {
-          console.log("");
-          console.log(counter+" "+bottles+" of beer on the wall.");
-      }
-      console.log(counter+" "+bottles+" of beer.");
-      console.log("Take one down.");
-      console.log("Pass it around.");
-      if (counter == 1) {
-          console.log("No bottles of beer on the wall.");
-      }
+  for(let i = startNum; i > 0; i--){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`;
   }
-
+}
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -244,11 +225,23 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+  if (score <=90 && score >=100) {
+    return "You got an A";
   }
-  
-  
+  else if (score <=80 && score >=89) {
+    return "You got a B";
+  }
+  else if (score <=70 && score >=79) {
+    return "You got a C";
+   }
+  else if (score <=60 && score >=69) {
+    return "You got a D"
+  }
+  else {
+    return "You got an F"
+  }
+  }
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
