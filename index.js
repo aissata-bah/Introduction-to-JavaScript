@@ -18,7 +18,8 @@ Do the following:
    HINT: no function required
 */
 
-
+let votingAge = 18
+console.log("true")
 
 /*
 Task 1b - Values
@@ -31,8 +32,13 @@ Do the following:
    HINT: no function required
 */
 
+let name = "Aissata"
+let lastName = "Bah"
 
-
+if (name==="Aissata") {
+  name=lastName;
+}
+console.log(name);
 
 
 /*
@@ -46,8 +52,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+let year = "1999";
+ console.log(parseInt(year));
 
 /*
 Task 1d - Multiply
@@ -58,10 +64,12 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
+
+function multiply(a,b){
+  return a * b;
     /*add your code here*/
   }
-
+  console.log (multiply(2,5));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -74,10 +82,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    return age * 7;
 }
-
+console.log (multiply(2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -111,6 +119,7 @@ function hungryDog(/*add your code here*/){
     /*add your code here*/
   }
 
+  
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -223,7 +232,7 @@ Using the vowelCounter function below do the following:
 function vowelCounter(/*add your code here*/) {
     /*add your code here*/
 }
-hghghh
+
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
